@@ -106,27 +106,30 @@ nav{
 
 .slider-conteiner{
     width: 100%;
-    height: 600px;
+    height: 800px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background:url(../img/hotel.jpg);
+    background:url(../img/hotel1.jpg);
+    background-size: 100%;
     color: #ffff;
     flex-shrink: 0;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     object-fit: fill;
 }
 
 .slider-conteiner:nth-child(2){
     background:url(../img/hotel2.jpg); 
-    background-repeat: no-repeat;
-    object-fit: fill;
+    /* background-repeat: no-repeat; */
+    /* background-size: 600px;
+    object-fit: fill; */
 }
 
 .slider-conteiner:nth-child(3){
     background:url(../img/hotel3.jpg); 
-    background-repeat: no-repeat;
-    object-fit: fill;
+    /* background-repeat: no-repeat;
+    background-size: 600px;
+    object-fit: fill; */
 }
 
 .slider-conteiner > img {
@@ -363,7 +366,7 @@ nav{
 .roomdata{
     width: 34%;
     margin-right: 100px;
-    background: rgb(224, 222, 222);
+    background: rgba(224, 222, 222, 0.452);
     height: 596px;
     padding: 100px 100px;
     text-align: right;
@@ -732,6 +735,206 @@ nav{
     width: 100%;
     height: 600px;
 }
+
+/* MORE ACTIVITIES */
+.cards{
+    width: 100%;
+    margin: 150px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.moreactivities{
+    margin: 10px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+.card{
+    width: 400px;
+    height: 350px;
+    background: coral;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.4s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+
+.front , .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front{
+    width: 100%;
+}
+
+.card1{
+    background-image: url(../img/4.jpg);
+    background-size: 400px 350px;
+}
+
+.card2{
+    background-image: url(../img/5.jpg);
+    background-size: cover;
+}
+
+.card3{
+    background-image: url(../img/3.jpg);
+    background-size: cover;
+}
+
+.back{
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+}
+
+.moreactivities:hover .card{
+    transform: rotateY(180deg);
+}
+
+/*      US        */
+/*  MISION   */
+.mision{
+    width: 100%;
+    display: flex;
+    margin: 0% 11% 4% 11%;
+}
+/* 
+.barimg{
+    width: 70%;
+}*/
+
+.misionimg img{
+    width: 75%;
+    height: 550px;
+    border-radius: 5px;
+} 
+
+.misioninfo{
+    width: 25%;
+    margin-left: 100px;
+    background: rgba(224, 222, 222, 0.404);
+    height: 550px;
+    padding: 100px 100px;
+    text-align: left;
+}
+
+
+.misioninfo h2{
+    color: rgb(49, 49, 49);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.misioninfo .subtitle{
+    color: rgba(49, 49, 49, 0.507);
+    margin: 0 0 35px 0;
+}
+
+.misioninfo p{
+    color: rgb(49, 49, 49);
+    font-weight: 300;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+
+/*  VISION  */
+.vision{
+    width: 100%;
+    display: flex;
+    margin: 0% 11%;
+}
+
+.visionimg img{
+    width: 990px;
+    height: 550px;
+    border-radius: 5px;
+} 
+
+.visioninfo{
+    width: 25%;
+    margin-right: 100px;
+    background: rgb(224, 222, 222, 0.404);
+    height: 550px;
+    padding: 100px 100px;
+    text-align: right;
+}
+
+
+.visioninfo h2{
+    color: rgb(49, 49, 49);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.visioninfo p{
+    color: rgb(49, 49, 49);
+    font-weight: 300;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: right;
+}
+
+.visioninfo .subtitle{
+    color: rgba(49, 49, 49, 0.507);
+    margin: 0 0 35px 0;
+}
+
+/*  CERTIFICATIONS   */
+.certifications{
+    width: 100%;
+    padding: 100px 0;  
+    background: #797373;
+}
+
+.certifications h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 11%;
+    color: rgba(49, 49, 49, 0.808);
+}
+
+.certif1{
+    width: 50%;
+    margin: 2% 4% 0% 11%;
+    display: flex;
+    background: #f2f2f215;
+    justify-content: space-around;
+}
+
+.certif1 img{
+    width: 32px;
+    height: 32px;
+    align-self: center;
+    /* background: #f2f2f2; */
+}
+
+.certif1 p{
+    font-size: 18px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px 0 10px 15px;
+    margin-bottom: 10px;
+    color: rgba(49, 49, 49, 0.534);
+}
+
 
 @keyframes cambio {
     0% {margin-left: 0;}
