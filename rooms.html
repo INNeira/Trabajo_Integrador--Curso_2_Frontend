@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Hotel All Inclusive</title>
 </head>
 <body>
         <div class="main">
-            <object data="common/navbar.html" width="100%"></object>
+            <header>
+                <nav class="nav">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logohotel.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <a href="../rooms.html" class="nav-link" target="blank">Habitaciones</a>
+                        <a href="../gastronomy.html" class="nav-link" target="blank">Gastronomia</a>
+                        <a href="../activities.html" class="nav-link" target="blank">Actividades</a>
+                        <a href="../us.html" class="nav-link" target="blank">Nosotros</a>
+                        <a href="../galery.html" class="nav-link" target="blank">Imagenes</a>
+                        <a href="../reservate.html" class="reservate" id="reservatelink" target="blank">Reservar</a>
+                    </div>
+                    <div class="hamburguer">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </header>
             <div class="preimg">
                 <img src="img/roomstand.jpg" alt="">
             </div>
@@ -34,7 +52,7 @@
                 </div>
             </div>
             <div class="services">
-                <h2>Servicios</h2>
+                <h2>SERVICIOS</h2>
                 <section class="icoservices">
                         <img src="img/aire-acondicionado.png" alt="">
                         <img src="img/television.png" alt="">
@@ -46,8 +64,9 @@
                         <img src="img/caja-de-seguridad.png" alt="">
                 </section>
             </div> 
+            <object data="common/footer.html" width="100%" class="object-footer"></object>
         </div>
-        <object data="common/footer.html" width="100%"></object>
         <script src="https://kit.fontawesome.com/cfb81c916f.js" crossorigin="anonymous"></script>
+        <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

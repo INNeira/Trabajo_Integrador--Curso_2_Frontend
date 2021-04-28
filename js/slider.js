@@ -2,7 +2,7 @@ let slider = document.querySelector(".slider");
 let sliderInividual = document.querySelectorAll(".slider-conteiner");
 let contador = 1;
 let width = sliderInividual[0].clientWidth; // El primer elemento individual del slider, va tomar el width que tenga
-let intervalo = 5000;
+let intervalo = 7000;
 
 window.addEventListener("resize", () =>{ // Se va actualizar en cada pantalla de distintos dispositivos
     width = sliderInividual[0].clientWidth;

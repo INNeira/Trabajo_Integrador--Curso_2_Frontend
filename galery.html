@@ -4,40 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <title>Hotel All Inclusive</title>
 </head>
 <body>
-    <object data="common/navbar.html" width="100%"></object>
         <div class="main">
-            <h1>Galeria de Imagenes</h1>
-            <div class="rooms">
-                <h3>Habitaciones</h3>
-                <div class="roomimg">
-                    <img src="" alt="" class="room">
-                    <img src="" alt="" class="room">
-                    <img src="" alt="" class="room">
-                    <img src="" alt="" class="room">
+            <header>
+                <nav class="nav">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logohotel.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <a href="../rooms.html" class="nav-link" target="blank">Habitaciones</a>
+                        <a href="../gastronomy.html" class="nav-link" target="blank">Gastronomia</a>
+                        <a href="../activities.html" class="nav-link" target="blank">Actividades</a>
+                        <a href="../us.html" class="nav-link" target="blank">Nosotros</a>
+                        <a href="../galery.html" class="nav-link" target="blank">Imagenes</a>
+                        <a href="../reservate.html" class="reservate" id="reservatelink" target="blank">Reservar</a>
+                    </div>
+                    <div class="hamburguer">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </header>
+            <h1 class="galerytitle">Galeria de Imagenes</h1>
+            <span class="linea"></span>
+                <div class="roomsgalery">
+                    <h3 class="galerysubtitle">Habitaciones</h3>
+                    <!-- <span class="lineasub"></span> -->
+                    <div class="roomimg">
+                        <a href="#image1"><img src="img/roomst1.jpg" alt=""></a>
+                        <a href="#image2"><img src="img/roomst2.jpg" alt=""></a>
+                        <a href="#image3"><img src="img/roomst3.jpg" alt=""></a>
+                        <a href="#image4"><img src="img/roomst4.jpg" alt=""></a>
+                    </div>
+                    <article class="light-box" id="image1">
+                        <a href="#image4" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/roomst1.jpg" alt="" class="room">
+                        <a href="#image2" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image2">
+                        <a href="#image1" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/roomst2.jpg" alt="" class="room">
+                        <a href="#image3" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image3">
+                        <a href="#image2" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/roomst3.jpg" alt="" class="room">
+                        <a href="#image4" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image4">
+                        <a href="#image3" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/roomst4.jpg" alt="" class="room">
+                        <a href="#image1" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
                 </div>
-            </div>
-            <div class="activities">
-                <h3>Actividades</h3>
-                <div class="actimg">
-                    <img src="" alt="" class="actv">
-                    <img src="" alt="" class="actv">
-                    <img src="" alt="" class="actv">
-                    <img src="" alt="" class="actv">
+                <div class="activitiesgalery">
+                    <h3 class="galerysubtitle">Actividades</h3>
+                    <div class="roomimg">
+                        <a href="#image5"><img src="img/1.jpg" alt=""></a>
+                        <a href="#image6"><img src="img/2.jpg" alt=""></a>
+                        <a href="#image7"><img src="img/3.jpg" alt=""></a>
+                        <a href="#image8"><img src="img/4.jpg" alt=""></a>
+                    </div>
+                    <article class="light-box" id="image5">
+                        <a href="#image8" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/1.jpg" alt="" class="room">
+                        <a href="#image6" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image6">
+                        <a href="#image5" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/2.jpg" alt="" class="room">
+                        <a href="#image7" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image7">
+                        <a href="#image6" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/3.jpg" alt="" class="room">
+                        <a href="#image8" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image8">
+                        <a href="#image7" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/4.jpg" alt="" class="room">
+                        <a href="#image5" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
                 </div>
-            </div>
-            <div class="gastronomy">
-                <h3>Gastronomia</h3>
-                <div class="foodimg">
-                    <img src="" alt="" class="food">
-                    <img src="" alt="" class="food">
-                    <img src="" alt="" class="food">
-                    <img src="" alt="" class="food">
+                <div class="gastronomygalery">
+                    <h3 class="galerysubtitle">Gastronomia</h3>
+                    <div class="roomimg">
+                        <a href="#image9"><img src="img/comida1.jpg" alt=""></a>
+                        <a href="#image10"><img src="img/comida2.jpg"" alt=""></a>
+                        <a href="#image11"><img src="img/comida3.jpg"" alt=""></a>
+                        <a href="#image12"><img src="img/comida5.jpg"" alt=""></a>
+                    </div>
+                    <article class="light-box" id="image9">
+                        <a href="#image12" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/comida1.jpg" alt="" class="room">
+                        <a href="#image10" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image10">
+                        <a href="#image9" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/comida2.jpg" alt="" class="room">
+                        <a href="#image11" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image11">
+                        <a href="#image10" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/comida3.jpg" alt="" class="room">
+                        <a href="#image12" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image12">
+                        <a href="#image11" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="img/comida5.jpg" alt="" class="room">
+                        <a href="#image9" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="close">X</a>
+                    </article>
                 </div>
-            </div>
+            <object data="common/footer.html" width="100%" class="object-footer"></object>
         </div>
-    <object data="common/footer.html" width="100%"></object>
+        <!-- <script src="js/main.js"></script> -->
+        <script src="https://kit.fontawesome.com/cfb81c916f.js" crossorigin="anonymous"></script>
 </body>
 </html>

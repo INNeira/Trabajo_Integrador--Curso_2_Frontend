@@ -4,34 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Hotel All Inclusive</title>
 </head>
 <body>
     
     <div class="main">
         <div class="brand">
-            <img src="" alt="">
+            <a href="index.html"><img src="img/logohotel.png" alt=""></a>
         </div>
         <div class="chooseroom">
-            <div class="roomtype">
-                <h2>Tipo de habitación</h2>
+            <div class="proomtype">
+                <h2 class="title-p">Habitación Doble Standard</h2>
                 <div class="imgroom">
-                    <img src="" alt="" class="roomT">
-                    <img src="" alt="" class="roomT">
-                    <img src="" alt="" class="roomT">
-                    <img src="" alt="" class="roomT">
+                    <a href="#image1"><img src="img/roomst1.jpg" alt=""></a>
+                    <a href="#image2"><img src="img/roomst2.jpg" alt=""></a>
+                    <a href="#image3"><img src="img/roomst3.jpg" alt=""></a>
+                    <a href="#image4"><img src="img/roomst4.jpg" alt=""></a>
                 </div>
+                <article class="light-box" id="image1">
+                    <a href="#image4" class="next"><i class="fas fa-arrow-left"></i></a>
+                    <img src="img/roomst1.jpg" alt="" class="room">
+                    <a href="#image2" class="next"><i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="close">X</a>
+                </article>
+                <article class="light-box" id="image2">
+                    <a href="#image1" class="next"><i class="fas fa-arrow-left"></i></a>
+                    <img src="img/roomst2.jpg" alt="" class="room">
+                    <a href="#image3" class="next"><i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="close">X</a>
+                </article>
+                <article class="light-box" id="image3">
+                    <a href="#image2" class="next"><i class="fas fa-arrow-left"></i></a>
+                    <img src="img/roomst3.jpg" alt="" class="room">
+                    <a href="#image4" class="next"><i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="close">X</a>
+                </article>
+                <article class="light-box" id="image4">
+                    <a href="#image3" class="next"><i class="fas fa-arrow-left"></i></a>
+                    <img src="img/roomst4.jpg" alt="" class="room">
+                    <a href="#image1" class="next"><i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="close">X</a>
+                </article>
             </div>
-            <div class="services">
-                <p>Descripción con todos los servicios de la habitación</p>
-            </div>
-            <div class="selectroom">
-                <h3>Precio</h3>
-                <a href="#" target="blank">Reservar esta habitación</a>
-            </div>
+            <section class="p-info">
+                <div class="p-services">
+                    <h3>Reembolsable con Desayuno</h3>
+                        <div class="icon-img"><img src="img/iconmonstr-bed-4.svg" alt=""><p>Habitación: Habitación Doble Twin Standard</p><br></div>
+                        <div class="icon-img"><img src="img/iconmonstr-user-22.svg" alt=""><p>Huespedes: 2 adultos</p><br></div>
+                        <div class="icon-img"><img src="img/iconmonstr-eat-6-thin.svg" alt=""><p>Breakfast: Incluido</p><br></div>
+                        <div class="icon-img"><img src="img/iconmonstr-car-23.svg" alt=""><p>Estacionamiento privado gratis disponible en el hotel</p><br></div>
+                        <div class="icon-img"><img src="img/iconmonstr-wireless-1.svg" alt=""><p>Wifi gratis</p><br></div>
+                        <div class="icon-img"><img src="img/iconmonstr-forbidden-2.svg" alt=""><p>No apto para fumadores</p><br></div>
+                        <div class="icon-img"><img src="img/iconmonstr-x-mark-7.svg" alt=""><p>Cancellation policy: Reembolsable</p><br></div>
+                        <div class="icon-img"><img src="" alt=""><p>21% impuestos no incluidos</p><br></div>
+                    <hr>
+                    <h2>Mejor precio garantizado</h2>
+                </div>
+                <div class="p-selectroom">
+                    <h5>ARS $2000</h5>
+                    <div class="sale"><img src="img/descuento.png" alt=""><h3>ARS $1000</h3></div>
+                    <h4>¡Aprovecha ahora!</h4>
+                    <a href="#" target="blank">Reservar Ahora</a>
+                </div>
+            </section>
         </div>
+        <object data="common/footer.html" width="100%" class="object-footer"></object>
+        <script src="https://kit.fontawesome.com/cfb81c916f.js" crossorigin="anonymous"></script>
     </div>
-
-    <object data="common/footer.html" width="100%"></object>
 </body>
 </html>

@@ -4,74 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Hotel All Inclusive</title>
 </head>
 <body>
     
     <div class="main">
-
-        <div class="searchprices">
-            <h3>Reserva tu estadia</h3>
-            <form action="prices.html" target="blank">
-                <div class="pickdate">
-                    <input type="date" id="from" class="inputdate">
-                    <input type="date" id="to" class="inputdate">
+        <div class="searchprices">      
+            <form action="prices.html" target="blank" class="formprice">
+                <h3 class="rtitle">Reserva tu estadia</h3>
+                <div class="pickdate_room">
+                    <h3>Desde</h3><input type="date" id="from" class="inputdate">
+                    <h3>Hasta</h3><input type="date" id="to" class="inputdate">
+                    <div class="vertical-line"></div>
+                    <div class="buttonprices">
+                        <button class="lookprices" type="submit">Ver Tarifas</button>
+                    </div>
                 </div>
-                <div class="pickroom">
-                    <select id="selectroom">
-                        <option value="simple">Simple</option>
-                        <option value="doble">Doble</option>
-                        <option value="triple">Triple</option>
-                    </select>
-                </div>
-                <div class="buttonprices">
-                    <button class="lookprices" type="submit">Ver Tarifas</button>
+                <div class="select-box">
+                    <!-- <h3>Habitación</h3>      -->
+                    <div class="options-container">
+                        <div class="option">
+                            <input type="radio" class="radio" id="simple" name="category" />
+                            <label for="simple">Simple</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="doble" name="category" />
+                            <label for="doble">Doble</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="triple" name="category" />
+                            <label for="triple">Triple</label>
+                        </div>
+                    </div>
+                    <div class="selected">
+                        Seleccione el tipo de Habitación
+                    </div>
+                    <div class="buttonprices2">
+                        <button class="lookprices" type="submit">Ver Tarifas</button>
+                    </div>
                 </div>
             </form>
         </div>
 
-        <h2>Paquetes</h2>
+        <h2 class="ptitle">Paquetes</h2>
         <div class="packages">
             <article class="singlepackage">
-                <img src="" alt="">
-                <h3>Titulo del paquete</h3> 
-                <p>Descripción del paquete</p>
+                <img src="img/1.jpg" alt="">
+                <section class="info">
+                    <h3>Titulo del paquete</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem quis maxime minus nisi reprehenderit temporibus eveniet iusto, tempore dicta.</p>
+                </section>
                 <div class="price">
-                    <label for="price">Precio</label>
+                    <label for="price">$10000</label>
                     <a href="#">Ver mas -></a>
                 </div>
             </article>
             <article class="singlepackage">
-                <img src="" alt="">
-                <h3>Titulo del paquete</h3> 
-                <p>Descripción del paquete</p>
+                <img src="img/1.jpg" alt="">
+                <section class="info">
+                    <h3>Titulo del paquete</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem quis maxime minus nisi reprehenderit temporibus eveniet iusto, tempore dicta.</p>
+                </section>
                 <div class="price">
-                    <label for="price">Precio</label>
+                    <label for="price">$10000</label>
                     <a href="#">Ver mas -></a>
                 </div>
             </article>
             <article class="singlepackage">
-                <img src="" alt="">
-                <h3>Titulo del paquete</h3> 
-                <p>Descripción del paquete</p>
+                <img src="img/1.jpg" alt="">
+                <section class="info">
+                    <h3>Titulo del paquete</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem quis maxime minus nisi reprehenderit temporibus eveniet iusto, tempore dicta.</p>
+                </section>
                 <div class="price">
-                    <label for="price">Precio</label>
+                    <label for="price">$10000</label>
                     <a href="#">Ver mas -></a>
                 </div>
             </article>
             <article class="singlepackage">
-                <img src="" alt="">
-                <h3>Titulo del paquete</h3> 
-                <p>Descripción del paquete</p>
+                <img src="img/1.jpg" alt="">
+                <section class="info">
+                    <h3>Titulo del paquete</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A rem quis maxime minus nisi reprehenderit temporibus eveniet iusto, tempore dicta.</p>
+                </section>
                 <div class="price">
-                    <label for="price">Precio</label>
+                    <label for="price">$10000</label>
                     <a href="#">Ver mas -></a>
                 </div>
             </article>
         </div>
-
+        <object data="common/footer.html" width="100%" class="object-footer"></object>
     </div>
-
-    <object data="common/footer.html" width="100%"></object>
+    <!-- <script src="js/select.js"></script> -->
 </body>
 </html>
